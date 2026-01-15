@@ -1,6 +1,40 @@
 # AI-Assisted Development Playbook
 
 ## 0. Purpose and Scope
+- **Purpose**
+  - This playbook MUST define the minimum rules for AI-assisted change delivery.
+  - This playbook MUST protect safety, quality, and accountability across the repo.
+  - This playbook MUST define minimum artefacts and evidence for review.
+  - This playbook SHOULD enable consistent decision-making and predictable outcomes.
+- **Scope boundaries**
+  - **Governed**
+    - All changes that use AI assistance for analysis, design, code, or documentation.
+    - All changes that modify tracked files or tooling used in delivery.
+    - All changes that alter prompts, instructions, or outputs stored in the repo.
+    - All changes that affect tests, review gates, releases, or compliance artefacts.
+    - All changes that affect determinism scaffolding or reproducibility controls.
+  - **Not governed**
+    - Personal notes, drafts, or experimental work outside the repository.
+    - Non-repo communications, planning tools, or external issue trackers.
+    - Third-party documentation and vendor policies not checked into the repo.
+    - Stack-specific rules, which MUST live in Section 14 and its referenced documents.
+    - Runtime operations outside defined release and rollback procedures in Section 10.
+- **Precedence rules**
+  - Repo rules and security policies MUST take precedence over this playbook.
+  - This playbook MUST take precedence over stack-specific playbooks.
+  - If a stack-specific playbook is stricter, the stricter rule MUST be followed.
+  - If two rules conflict and precedence is unclear, work MUST stop and a decision MUST be recorded.
+  - If a rule is missing for a required action, work MUST stop and Section 13 MUST be followed.
+- **How to use this document**
+  - [ ] Humans MUST read Section 4 before starting any change.
+  - [ ] Humans SHOULD classify change risk using Section 3.
+  - [ ] AI tools MUST follow Sections 7 and 8 verbatim.
+  - [ ] AI tools MUST stop and request input when scope is unclear.
+  - [ ] AI tools SHOULD reference section numbers when requesting decisions.
+  - [ ] If a mandatory step cannot be completed, work MUST stop and Section 13 MUST be followed.
+  - [ ] Everyone MUST verify gates using Section 9 before release.
+  - [ ] Everyone SHOULD record required artefacts per Section 11.
+  - [ ] Re-evaluate Section 0 when scope changes or new constraints appear.
 ## 1. Core Principles (Non-Negotiable)
 ## 2. Roles and Responsibility Boundaries
 ## 3. Change Classification and Risk Model
