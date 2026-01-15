@@ -561,3 +561,57 @@
 - **Non-goal**: A declared out-of-scope outcome that must not be delivered.
 - **Architecture Decision Record**: A record of a decision, its rationale, and consequences.
 ## 16. Appendix
+### Example Change Brief
+- **Goal**
+  1. Define a single behaviour change with measurable outcomes.
+- **Non-goals**
+  1. Exclude unrelated improvements or refactors.
+- **Acceptance criteria**
+  1. Specify success conditions in measurable terms.
+- **Constraints**
+  1. List scope limits, dependencies, and time constraints.
+- **Risk and blast radius**
+  1. Declare risk level and impacted areas.
+- **Test strategy**
+  1. Select strategy using [Section 5](#5-test-strategy-decision-framework).
+- **Execution plan (ordered)**
+  1. Align steps to [Section 4](#4-mandatory-workflow-order-of-execution).
+- **Verification**
+  1. Reference gates in [Section 9](#9-review-and-verification-gates).
+- **Rollback**
+  1. Provide rollback triggers and steps per [Section 10](#10-release-and-rollback-discipline).
+- **Notes or links**
+  1. Record related decisions and artefacts.
+
+### Example Execution Plan
+1. Classify change size and risk per [Section 3](#3-change-classification-and-risk-model).
+2. Prepare artefacts per [Section 11](#11-documentation-and-artefacts).
+3. Confirm boundaries and determinism controls per [Section 6](#6-determinism-scaffolding).
+4. Implement change within approved scope.
+5. Build safety net per [Section 5](#5-test-strategy-decision-framework).
+6. Verify gates per [Section 9](#9-review-and-verification-gates).
+7. Prepare release and rollback per [Section 10](#10-release-and-rollback-discipline).
+8. Record outcomes and updates per [Section 12](#12-learning-and-continuous-improvement).
+
+### Example AI prompt wrapper
+1. State the goal, non-goals, acceptance criteria, and constraints.
+2. State the change classification or request classification per [Section 3](#3-change-classification-and-risk-model).
+3. State required artefacts per [Section 11](#11-documentation-and-artefacts).
+4. State stop conditions and escalation routes per [Section 13](#13-compliance-and-enforcement).
+5. Request explicit links to relevant sections.
+6. Require the assistant to surface uncertainty and assumptions.
+
+### Example failure scenarios
+1. Verification gates skipped due to time pressure.
+2. Change released without rollback triggers.
+3. New dependency introduced without approval.
+4. Ambiguous requirement interpreted without confirmation.
+5. Determinism controls missing leading to flaky tests.
+
+### Example compliant vs non-compliant changes
+1. Compliant: Change scope matches approved artefacts. Non-compliant: Scope expanded without reclassification.
+2. Compliant: Tests added before behaviour change. Non-compliant: Behaviour changed with no safety net.
+3. Compliant: Release has rollback plan. Non-compliant: Release proceeds without rollback plan.
+4. Compliant: Dependencies approved and recorded. Non-compliant: Dependencies added without approval.
+5. Compliant: Contracts updated with impact assessment. Non-compliant: Contracts changed without assessment.
+6. Compliant: Verification evidence recorded. Non-compliant: Verification claimed without evidence.

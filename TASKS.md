@@ -324,7 +324,7 @@ Define key terms concisely (1 to 2 sentences each), including:
 
 ---
 
-## Task 17 - Section 16: Appendix (Examples) [ ]
+## Task 17 - Section 16: Appendix (Examples) [x]
 
 Fill Section 16.
 
