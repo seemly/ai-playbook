@@ -18,7 +18,7 @@
 
 ### Scope
 - Applies to themes, plugins, mu-plugins, and block projects.
-- Supplements the [Coding Standards Index](../CODING_STANDARDS.md) and the [WordPress Playbook](../WORDPRESS.md).
+- Supplements the [Coding Standards Index](INDEX.md) and the [WordPress Playbook](../stacks/wordpress/PLAYBOOK.md).
 
 ## 1. Data Handling and Security
 - Sanitize and validate all untrusted input.

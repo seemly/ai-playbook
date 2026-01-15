@@ -25,7 +25,7 @@
 
 ## 0. Purpose and Scope
 ### Purpose
-- Define WordPress-specific rules that overlay the baseline [AI Playbook](AI_PLAYBOOK.md).
+- Define WordPress-specific rules that overlay the baseline [AI Playbook](../../AI_PLAYBOOK.md).
 - Keep guidance thin and focused on WordPress-only requirements.
 
 ### Scope
@@ -34,16 +34,16 @@
 - If this overlay is stricter than the base playbook, follow the stricter rule.
 
 ## 1. How to Use
-- Read [AI Playbook](AI_PLAYBOOK.md) first for baseline rules.
+- Read [AI Playbook](../../AI_PLAYBOOK.md) first for baseline rules.
 - Use this overlay for WordPress-specific decisions and workflows.
-- Use the [Coding Standards Index](CODING_STANDARDS.md) for language rules.
+- Use the [Coding Standards Index](../../standards/INDEX.md) for language rules.
 - If a rule is missing or unclear, stop and request guidance.
 
 ## 2. Decision Tree
 - If building a theme or block theme, focus on Sections 5, 10, and 11.
 - If building a plugin or mu-plugin, focus on Sections 6, 7, 8, and 9.
 - If working on editor UI, prioritize Sections 10 and 15.
-- If working on shared styling, prioritize Section 15 and the CSS standards.
+- If working on shared styling, prioritize Sections 15 and the CSS standards.
 
 ## 3. Project Types
 - **Theme**: presentation layer using templates, `functions.php`, and theme assets.
@@ -146,11 +146,11 @@
 - Provide migration notes for consumers.
 
 ## 19. Coding Standards References
-- [Coding Standards Index](CODING_STANDARDS.md)
-- [AI Coding Standards (PHP)](coding-standards/CODING_STANDARDS_PHP.md)
-- [AI Coding Standards (JS/TS)](coding-standards/CODING_STANDARDS_JS.md)
-- [AI Coding Standards (CSS)](coding-standards/CODING_STANDARDS_CSS.md)
-- [AI Coding Standards (WordPress)](coding-standards/CODING_STANDARDS_WORDPRESS.md)
+- [Coding Standards Index](../../standards/INDEX.md)
+- [AI Coding Standards (PHP)](../../standards/php.md)
+- [AI Coding Standards (JS/TS)](../../standards/js.md)
+- [AI Coding Standards (CSS)](../../standards/css.md)
+- [AI Coding Standards (WordPress)](../../standards/wordpress.md)
 
 ## 20. References and Links
 - Add WordPress official docs links as needed.

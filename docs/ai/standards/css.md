@@ -13,7 +13,7 @@
 
 ### Scope
 - Applies to CSS, SCSS, and build outputs committed to the repo.
-- Supplements [AI Playbook](../AI_PLAYBOOK.md), the [WordPress overlay](../WORDPRESS.md), and the [Coding Standards Index](../CODING_STANDARDS.md).
+- Supplements [AI Playbook](../AI_PLAYBOOK.md), the [WordPress overlay](../stacks/wordpress/PLAYBOOK.md), and the [Coding Standards Index](INDEX.md).
 
 ## 1. Naming and Structure
 - Follow project naming conventions for classes and utilities.

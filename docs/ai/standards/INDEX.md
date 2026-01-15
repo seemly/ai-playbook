@@ -15,20 +15,20 @@
 ### Scope
 - Applies to WordPress theme, plugin, and block development work.
 - Applies to any AI-assisted change that touches PHP, JS/TS, or CSS.
-- Supplements [AI Playbook](AI_PLAYBOOK.md) and the [WordPress overlay](WORDPRESS.md).
+- Supplements [AI Playbook](../AI_PLAYBOOK.md) and the [WordPress overlay](../stacks/wordpress/PLAYBOOK.md).
 
 ## 1. How to Use
 - Start here to find the correct language standard.
 - Follow the most specific document available for the file you are editing.
 - If a rule conflicts with repo policy, repo policy takes precedence.
 - If a rule is missing, stop and request guidance before proceeding.
-- Use the [WordPress overlay](WORDPRESS.md) for stack-specific rules.
+- Use the [WordPress overlay](../stacks/wordpress/PLAYBOOK.md) for stack-specific rules.
 
 ## 2. Document Map
-- PHP: [AI Coding Standards (PHP)](coding-standards/CODING_STANDARDS_PHP.md)
-- JS/TS: [AI Coding Standards (JS/TS)](coding-standards/CODING_STANDARDS_JS.md)
-- CSS: [AI Coding Standards (CSS)](coding-standards/CODING_STANDARDS_CSS.md)
-- WordPress: [AI Coding Standards (WordPress)](coding-standards/CODING_STANDARDS_WORDPRESS.md)
+- PHP: [AI Coding Standards (PHP)](php.md)
+- JS/TS: [AI Coding Standards (JS/TS)](js.md)
+- CSS: [AI Coding Standards (CSS)](css.md)
+- WordPress: [AI Coding Standards (WordPress)](wordpress.md)
 
 ## 3. Governance
 - Owners are responsible for approving updates and resolving conflicts.
