@@ -187,7 +187,7 @@ Include:
 
 ---
 
-## Task 7 - Section 6: Determinism Scaffolding [ ]
+## Task 7 - Section 6: Determinism Scaffolding [x]
 
 Fill Section 6.
 

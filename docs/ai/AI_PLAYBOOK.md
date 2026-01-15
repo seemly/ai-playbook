@@ -232,6 +232,56 @@
 11. Tests SHOULD document any known gaps and risk trade-offs.
 12. Tests SHOULD be updated when acceptance criteria change.
 ## 6. Determinism Scaffolding
+### Boundary selection rules
+1. Boundaries MUST be defined before test design begins.
+2. Boundaries MUST align to the change scope and risk classification in [Section 3](#3-change-classification-and-risk-model).
+3. Each boundary MUST declare inputs, outputs, and failure modes.
+4. If boundaries overlap or conflict, work MUST stop and a decision MUST be recorded.
+
+### Normalising nondeterminism rules
+1. Sources of nondeterminism MUST be identified and listed before testing.
+2. Nondeterministic inputs MUST be stabilised or controlled.
+3. Time-dependent behaviour MUST be controlled with fixed references.
+4. Randomness MUST be replaced with fixed values for tests.
+5. External dependencies MUST be isolated or simulated.
+6. If nondeterminism cannot be controlled, work MUST stop and escalation MUST follow [Section 13](#13-compliance-and-enforcement).
+
+### Fixture and data stability rules
+1. Fixtures MUST use stable identifiers and deterministic values.
+2. Fixtures MUST be minimal and aligned to acceptance criteria.
+3. Shared fixtures MUST include ownership and update rules.
+4. Data setup MUST be repeatable across runs.
+5. If fixture changes affect expected outcomes, change classification MUST be revisited.
+
+### Acceptable assertions
+1. Assertions that verify specific outputs against expected values.
+2. Assertions that verify explicit error handling and failure responses.
+3. Assertions that verify state transitions are complete and correct.
+4. Assertions that verify ordering when ordering is an explicit requirement.
+5. Assertions that verify boundary inputs and outputs match contracts.
+6. Assertions that verify reversibility or rollback requirements.
+7. Assertions that verify non-goals are preserved.
+8. Assertions that verify determinism assumptions remain true.
+
+### Forbidden assertions
+1. Assertions that only check for successful execution.
+2. Assertions that only check for non-null results.
+3. Assertions that depend on current system time.
+4. Assertions that depend on random values.
+5. Assertions that accept any output without constraints.
+6. Assertions that rely on external services without control.
+7. Assertions that ignore error paths or failure modes.
+8. Assertions that mask or silence failures.
+
+### Safety net ready checklist
+1. Boundaries are documented with inputs, outputs, and failure modes.
+2. Nondeterminism controls are implemented and recorded.
+3. Fixtures are minimal, stable, and reviewed.
+4. Assertions cover success and failure paths.
+5. Failure conditions are tested and observable.
+6. Tests run deterministically under agreed conditions.
+7. Risk classification aligns with test coverage in [Section 3](#3-change-classification-and-risk-model).
+8. Verification readiness aligns with [Section 9](#9-review-and-verification-gates).
 ## 7. AI Usage Rules
 ## 8. Change Execution Rules
 ## 9. Review and Verification Gates
