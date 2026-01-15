@@ -62,6 +62,42 @@
    - Rule: Conflicts MUST be resolved using [Section 0](#0-purpose-and-scope) precedence rules.
    - Why it exists: Prevents inconsistent application of rules.
 ## 2. Roles and Responsibility Boundaries
+### Responsibility matrix
+| Area | Human OWNS | AI MAY DO |
+| --- | --- | --- |
+| Goals and acceptance criteria | Define objectives, scope, and success criteria | Summarise requirements and highlight gaps for approval |
+| Risk classification | Classify change size and risk using [Section 3](#3-change-classification-and-risk-model) | Propose classification and cite rationale for review |
+| Change brief and artefacts | Approve required artefacts per [Section 11](#11-documentation-and-artefacts) | Draft artefacts for human review |
+| Design decisions | Approve final decisions and constraints | Offer options, trade-offs, and decision questions |
+| Implementation | Own edits and approve final changes | Draft edits within agreed scope |
+| Testing strategy | Choose strategy using [Section 5](#5-test-strategy-decision-framework) | Propose tests and coverage gaps |
+| Verification | Confirm gates in [Section 9](#9-review-and-verification-gates) | Summarise verification evidence |
+| Release and rollback | Approve release and rollback per [Section 10](#10-release-and-rollback-discipline) | Draft release steps and risk notes |
+| Compliance and exceptions | Approve exceptions using [Section 13](#13-compliance-and-enforcement) | Identify compliance risks and missing evidence |
+
+### AI MUST NOT actions
+1. AI MUST NOT approve or authorise a change.
+2. AI MUST NOT change scope, goals, or acceptance criteria without human approval.
+3. AI MUST NOT execute releases or rollbacks.
+4. AI MUST NOT alter compliance rules or enforcement decisions.
+5. AI MUST NOT bypass or disable verification gates in [Section 9](#9-review-and-verification-gates).
+6. AI MUST NOT introduce dependencies without explicit approval.
+7. AI MUST NOT modify security-sensitive material without human review.
+8. AI MUST NOT edit outside agreed files or directories.
+9. AI MUST NOT claim a step is complete without evidence.
+10. AI MUST NOT proceed when a stop condition is triggered.
+11. AI MUST NOT invent requirements, constraints, or acceptance criteria.
+12. AI MUST NOT conceal uncertainty or unresolved ambiguity.
+
+### Stop and ask conditions
+1. If ownership is unclear for any area in the matrix, work MUST stop and a human decision MUST be recorded.
+2. If requested work conflicts with [Section 0](#0-purpose-and-scope) or repo rules, work MUST stop and a decision MUST be recorded.
+3. If change size or risk cannot be classified using [Section 3](#3-change-classification-and-risk-model), work MUST stop and a human decision MUST be recorded.
+4. If required artefacts are missing per [Section 11](#11-documentation-and-artefacts), work MUST stop until they exist.
+5. If verification gates in [Section 9](#9-review-and-verification-gates) cannot be met, work MUST stop and escalation MUST follow [Section 13](#13-compliance-and-enforcement).
+6. If release or rollback approval is absent, work MUST stop and approval MUST be requested per [Section 10](#10-release-and-rollback-discipline).
+7. If AI output cannot be validated against scope or constraints, work MUST stop and request clarification.
+8. If any prohibited action in [Section 7](#7-ai-usage-rules) would be required, work MUST stop and request an alternative.
 ## 3. Change Classification and Risk Model
 ## 4. Mandatory Workflow (Order of Execution)
 ## 5. Test Strategy Decision Framework

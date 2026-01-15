@@ -131,7 +131,7 @@ Constraints:
 
 ---
 
-## Task 3 - Section 2: Roles and Responsibility Boundaries [ ]
+## Task 3 - Section 2: Roles and Responsibility Boundaries [x]
 
 Fill Section 2.
 
