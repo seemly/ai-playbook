@@ -283,6 +283,65 @@
 7. Risk classification aligns with test coverage in [Section 3](#3-change-classification-and-risk-model).
 8. Verification readiness aligns with [Section 9](#9-review-and-verification-gates).
 ## 7. AI Usage Rules
+### Allowed actions
+1. Summarise requirements, scope, and constraints for confirmation.
+2. Draft options and trade-offs for human decision.
+3. Propose change classifications using [Section 3](#3-change-classification-and-risk-model).
+4. Draft Change Briefs and execution artefacts per [Section 11](#11-documentation-and-artefacts).
+5. Suggest test strategies using [Section 5](#5-test-strategy-decision-framework).
+6. Draft determinism scaffolding steps per [Section 6](#6-determinism-scaffolding).
+7. Generate change plans aligned to [Section 4](#4-mandatory-workflow-order-of-execution).
+8. Implement changes within approved scope and files.
+9. Summarise verification evidence per [Section 9](#9-review-and-verification-gates).
+10. Flag missing information or ambiguous requirements.
+11. Highlight risks, dependencies, and potential failure modes.
+12. Propose release and rollback steps for approval.
+
+### Restricted actions with conditions
+1. Editing files beyond approved scope MAY occur only with explicit human approval.
+2. Introducing new dependencies MAY occur only with explicit approval and risk reclassification.
+3. Refactoring behaviour MAY occur only after characterisation testing per [Section 5](#5-test-strategy-decision-framework).
+4. Expanding scope MAY occur only after reclassification per [Section 3](#3-change-classification-and-risk-model).
+5. Modifying shared contracts MAY occur only with documented impact assessment.
+6. Editing tests MAY occur only when linked to acceptance criteria changes.
+7. Adjusting verification steps MAY occur only with human approval.
+8. Modifying release or rollback plans MAY occur only with human approval.
+9. Using generated artefacts for decisions MAY occur only after human review.
+10. Proceeding after a stop condition MAY occur only after resolution per [Section 13](#13-compliance-and-enforcement).
+
+### Prohibited actions
+1. Approving or authorising a change.
+2. Claiming verification passed without evidence.
+3. Skipping or reordering steps in [Section 4](#4-mandatory-workflow-order-of-execution).
+4. Concealing uncertainty or unresolved ambiguity.
+5. Modifying scope without reclassification.
+6. Bypassing determinism scaffolding in [Section 6](#6-determinism-scaffolding).
+7. Altering compliance rules or enforcement decisions.
+8. Releasing changes without human approval.
+9. Changing acceptance criteria without updating artefacts.
+10. Making security-sensitive changes without human review.
+11. Inventing requirements or constraints.
+12. Overwriting evidence or audit records.
+
+### Prompting requirements checklist
+1. Prompts MUST state goals, non-goals, and acceptance criteria.
+2. Prompts MUST state change scope and file boundaries.
+3. Prompts MUST state change classification assumptions or request classification.
+4. Prompts MUST cite required artefacts from [Section 11](#11-documentation-and-artefacts).
+5. Prompts MUST include stop conditions and escalation paths.
+6. Prompts MUST request disclosure of uncertainty and assumptions.
+7. Prompts SHOULD request links to relevant sections.
+8. Prompts SHOULD request diffs for review.
+
+### Output validation rules
+1. Output MUST align to stated scope and constraints.
+2. Output MUST reference required artefacts and evidence.
+3. Output MUST include known risks and trade-offs.
+4. Output MUST identify any missing information.
+5. Output MUST be checked for prohibited actions.
+6. Output MUST be verified against acceptance criteria.
+7. Output MUST reference the workflow in [Section 4](#4-mandatory-workflow-order-of-execution).
+8. Output MUST include stop conditions when ambiguity remains.
 ## 8. Change Execution Rules
 ## 9. Review and Verification Gates
 ## 10. Release and Rollback Discipline

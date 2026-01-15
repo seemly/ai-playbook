@@ -200,7 +200,7 @@ Include:
 
 ---
 
-## Task 8 - Section 7: AI Usage Rules [ ]
+## Task 8 - Section 7: AI Usage Rules [x]
 
 Fill Section 7.
 
