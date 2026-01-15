@@ -526,5 +526,25 @@
 3. Adherence metrics MUST be reviewed on a regular cadence.
 4. If adherence falls below agreed thresholds, remediation MUST be planned.
 ## 14. Relationship to Stack-Specific Playbooks
+### Layering model
+1. This playbook MUST define baseline rules for all stacks.
+2. Stack-specific playbooks MUST add rules without weakening baseline requirements.
+3. Stack-specific playbooks MUST reference this playbook sections by number.
+
+### Override rules
+1. Stack-specific playbooks MAY add stricter requirements.
+2. Stack-specific playbooks MUST NOT override baseline safety or compliance rules.
+3. If stack-specific rules conflict with baseline rules, the stricter rule MUST be applied.
+
+### Conflict resolution
+1. Conflicts MUST be recorded with affected sections and rationale.
+2. Conflicts MUST be resolved using [Section 0](#0-purpose-and-scope) precedence rules.
+3. If resolution is unclear, work MUST stop and follow [Section 13](#13-compliance-and-enforcement).
+
+### Process for adding a new stack playbook
+1. A stack playbook MUST declare scope, owners, and target stack.
+2. A stack playbook MUST map additions to sections in this playbook.
+3. A stack playbook MUST be reviewed using [Section 9](#9-review-and-verification-gates).
+4. If a stack playbook adds new artefacts, [Section 11](#11-documentation-and-artefacts) MUST be updated.
 ## 15. Glossary and Definitions
 ## 16. Appendix

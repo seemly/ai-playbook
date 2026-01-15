@@ -292,7 +292,7 @@ Include:
 
 ---
 
-## Task 15 - Section 14: Relationship to Stack-Specific Playbooks [ ]
+## Task 15 - Section 14: Relationship to Stack-Specific Playbooks [x]
 
 Fill Section 14.
 
