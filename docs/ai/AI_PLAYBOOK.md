@@ -553,26 +553,18 @@
 | Architecture Decision Record | A record of a decision, its rationale, and consequences. |
 ## 16. Appendix
 ### Example Change Brief
-- **Goal**
-  - Define a single behaviour change with measurable outcomes.
-- **Non-goals**
-  - Exclude unrelated improvements or refactors.
-- **Acceptance criteria**
-  - Specify success conditions in measurable terms.
-- **Constraints**
-  - List scope limits, dependencies, and time constraints.
-- **Risk and blast radius**
-  - Declare risk level and impacted areas.
-- **Test strategy**
-  - Select strategy using [Section 5](#5-test-strategy-decision-framework).
-- **Execution plan (ordered)**
-  - Align steps to [Section 4](#4-mandatory-workflow-order-of-execution).
-- **Verification**
-  - Reference gates in [Section 9](#9-review-and-verification-gates).
-- **Rollback**
-  - Provide rollback triggers and steps per [Section 10](#10-release-and-rollback-discipline).
-- **Notes or links**
-  - Record related decisions and artefacts.
+| Field | Example |
+| --- | --- |
+| Goal | Define a single behaviour change with measurable outcomes. |
+| Non-goals | Exclude unrelated improvements or refactors. |
+| Acceptance criteria | Specify success conditions in measurable terms. |
+| Constraints | List scope limits, dependencies, and time constraints. |
+| Risk and blast radius | Declare risk level and impacted areas. |
+| Test strategy | Select strategy using [Section 5](#5-test-strategy-decision-framework). |
+| Execution plan (ordered) | Align steps to [Section 4](#4-mandatory-workflow-order-of-execution). |
+| Verification | Reference gates in [Section 9](#9-review-and-verification-gates). |
+| Rollback | Provide rollback triggers and steps per [Section 10](#10-release-and-rollback-discipline). |
+| Notes or links | Record related decisions and artefacts. |
 
 ### Example Execution Plan
 1. Classify change size and risk per [Section 3](#3-change-classification-and-risk-model).
