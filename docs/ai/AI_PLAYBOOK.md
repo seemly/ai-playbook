@@ -373,6 +373,60 @@
 3. If failures are not understood, work MUST stop and request clarification.
 4. Verification MUST include failure paths aligned to [Section 5](#5-test-strategy-decision-framework).
 ## 9. Review and Verification Gates
+### Test review checklist
+1. Tests map to acceptance criteria and non-goals.
+2. Tests cover critical success paths for the change.
+3. Tests cover failure paths and error handling.
+4. Tests align to the chosen strategy in [Section 5](#5-test-strategy-decision-framework).
+5. Tests include determinism controls per [Section 6](#6-determinism-scaffolding).
+6. Tests isolate boundaries and avoid hidden coupling.
+7. Tests use stable data and fixtures.
+8. Tests include rollback or reversibility coverage where required.
+9. Tests include evidence for changed behaviour.
+10. Tests include evidence for unchanged behaviour where expected.
+11. Tests document known gaps and risk trade-offs.
+12. Tests include clear assertions and expected outcomes.
+
+### Code review focus list
+1. Changes align with approved scope and artefacts.
+2. Risk classification matches the change complexity in [Section 3](#3-change-classification-and-risk-model).
+3. Contracts and interfaces remain stable or have approved changes.
+4. Dependencies follow [Section 8](#8-change-execution-rules) rules.
+5. Determinism scaffolding is applied where needed.
+6. Failure handling and recovery paths are complete.
+7. Logging and error reporting are sufficient for verification.
+8. Review evidence includes outputs and data changes.
+9. Scope changes are reclassified and documented.
+10. Security-sensitive changes have human review.
+11. Verification evidence matches the checklist in this section.
+12. Artefacts are updated per [Section 11](#11-documentation-and-artefacts).
+
+### Verification checklist
+- **Automated**
+  1. All required tests pass for the change classification.
+  2. Deterministic tests run without flakiness.
+  3. Test results are recorded and traceable.
+  4. Checks for failure paths are executed.
+- **Manual**
+  1. Manual verification steps are recorded with evidence.
+  2. Manual checks cover risk areas and edge cases.
+  3. Manual checks confirm non-goals remain unchanged.
+  4. Manual checks align with acceptance criteria.
+- **Observability**
+  1. Monitoring signals are defined for risk areas.
+  2. Observability includes alerts for failure conditions.
+  3. Observability data is reviewed after change completion.
+  4. Observability gaps are recorded for follow-up.
+
+### Triggers requiring heightened review
+1. High risk classification or large change size.
+2. Changes to shared contracts or interfaces.
+3. Changes affecting security or compliance expectations.
+4. Changes that alter rollback complexity.
+5. Changes with unresolved ambiguity.
+6. Changes lacking determinism scaffolding or stable tests.
+7. Changes introducing new dependencies.
+8. Changes with limited or missing verification evidence.
 ## 10. Release and Rollback Discipline
 ## 11. Documentation and Artefacts
 ## 12. Learning and Continuous Improvement

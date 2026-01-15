@@ -226,7 +226,7 @@ Include:
 
 ---
 
-## Task 10 - Section 9: Review and Verification Gates [ ]
+## Task 10 - Section 9: Review and Verification Gates [x]
 
 Fill Section 9.
 
