@@ -213,7 +213,7 @@ Include:
 
 ---
 
-## Task 9 - Section 8: Change Execution Rules [ ]
+## Task 9 - Section 8: Change Execution Rules [x]
 
 Fill Section 8.
 

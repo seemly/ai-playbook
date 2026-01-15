@@ -343,6 +343,35 @@
 7. Output MUST reference the workflow in [Section 4](#4-mandatory-workflow-order-of-execution).
 8. Output MUST include stop conditions when ambiguity remains.
 ## 8. Change Execution Rules
+### Diff size and scope limits
+1. Each change MUST align to the approved scope and boundaries.
+2. Large or multi-area changes MUST be decomposed into ordered steps.
+3. If the diff exceeds the agreed scope, work MUST stop and reclassify per [Section 3](#3-change-classification-and-risk-model).
+4. If required files exceed the planned set, work MUST stop and request approval.
+
+### Dependency introduction rules
+1. New dependencies MUST have explicit approval and documented rationale.
+2. Dependency changes MUST include impact assessment and rollback notes.
+3. If a dependency increases risk classification, work MUST stop and reclassify.
+4. Dependency changes MUST be reflected in artefacts per [Section 11](#11-documentation-and-artefacts).
+
+### Refactoring rules
+1. Behaviour-preserving refactors MUST be separated from behaviour changes.
+2. Behaviour changes MUST follow characterisation testing per [Section 5](#5-test-strategy-decision-framework) before refactoring.
+3. Refactors MUST keep contracts stable unless approved.
+4. If refactoring alters expected outcomes, work MUST stop and update classification.
+
+### Interface and contract stability rules
+1. Interfaces and contracts MUST remain stable unless change classification permits alteration.
+2. Contract changes MUST include explicit impact assessment and migration steps.
+3. If contract consumers are unclear, work MUST stop and identify owners.
+4. Contract changes MUST include verification steps per [Section 9](#9-review-and-verification-gates).
+
+### Failure handling expectations
+1. Failures MUST be recorded with context, inputs, and expected outcomes.
+2. Recovery steps MUST be documented for every failure path.
+3. If failures are not understood, work MUST stop and request clarification.
+4. Verification MUST include failure paths aligned to [Section 5](#5-test-strategy-decision-framework).
 ## 9. Review and Verification Gates
 ## 10. Release and Rollback Discipline
 ## 11. Documentation and Artefacts
