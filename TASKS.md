@@ -269,7 +269,7 @@ Do not include examples.
 
 ---
 
-## Task 13 - Section 12: Learning and Continuous Improvement [ ]
+## Task 13 - Section 12: Learning and Continuous Improvement [x]
 
 Fill Section 12.
 

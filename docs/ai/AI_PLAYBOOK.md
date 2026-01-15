@@ -480,6 +480,26 @@
   2. Rollback triggers, steps, and verification.
   3. Monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
 ## 12. Learning and Continuous Improvement
+### Post-change review template
+1. Summary of change and intended outcomes.
+2. Verification results and evidence links.
+3. Gaps or defects discovered after release.
+4. Root causes for any unexpected outcomes.
+5. Actions to prevent recurrence and owners.
+6. Updates required to playbook sections.
+
+### Rules for updating the playbook
+1. Updates MUST be tied to observed gaps or recurring failures.
+2. Updates MUST reference affected sections and rationale.
+3. Updates MUST be reviewed using [Section 9](#9-review-and-verification-gates).
+4. If updates affect enforcement, work MUST follow [Section 13](#13-compliance-and-enforcement).
+5. If updates introduce new requirements, work MUST update [Section 11](#11-documentation-and-artefacts).
+
+### Deprecation process
+1. Deprecated rules MUST include a replacement or removal rationale.
+2. Deprecation MUST include a transition plan and owners.
+3. Deprecation MUST include a cut-off date and verification criteria.
+4. If a deprecation affects workflows, work MUST update [Section 4](#4-mandatory-workflow-order-of-execution).
 ## 13. Compliance and Enforcement
 ## 14. Relationship to Stack-Specific Playbooks
 ## 15. Glossary and Definitions
