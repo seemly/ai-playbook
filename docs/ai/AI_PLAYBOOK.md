@@ -26,18 +26,18 @@
 2. This playbook MUST take precedence over stack-specific playbooks.
 3. If a stack-specific playbook is stricter, the stricter rule MUST be followed.
 4. If two rules conflict and precedence is unclear, work MUST stop and a decision MUST be recorded.
-5. If a rule is missing for a required action, work MUST stop and Section 13 MUST be followed.
+5. If a rule is missing for a required action, work MUST stop and [Section 13](#13-compliance-and-enforcement) MUST be followed.
 
 ### How to use this document
-1. Humans MUST read Section 4 before starting any change.
-2. Humans SHOULD classify change risk using Section 3.
-3. AI tools MUST follow Sections 7 and 8 verbatim.
+1. Humans MUST read [Section 4](#4-mandatory-workflow-order-of-execution) before starting any change.
+2. Humans SHOULD classify change risk using [Section 3](#3-change-classification-and-risk-model).
+3. AI tools MUST follow [Section 7](#7-ai-usage-rules) and [Section 8](#8-change-execution-rules) verbatim.
 4. AI tools MUST stop and request input when scope is unclear.
 5. AI tools SHOULD reference section numbers when requesting decisions.
-6. If a mandatory step cannot be completed, work MUST stop and Section 13 MUST be followed.
-7. Everyone MUST verify gates using Section 9 before release.
-8. Everyone SHOULD record required artefacts per Section 11.
-9. Re-evaluate Section 0 when scope changes or new constraints appear.
+6. If a mandatory step cannot be completed, work MUST stop and [Section 13](#13-compliance-and-enforcement) MUST be followed.
+7. Everyone MUST verify gates using [Section 9](#9-review-and-verification-gates) before release.
+8. Everyone SHOULD record required artefacts per [Section 11](#11-documentation-and-artefacts).
+9. Re-evaluate [Section 0](#0-purpose-and-scope) when scope changes or new constraints appear.
 ## 1. Core Principles (Non-Negotiable)
 ### Principles
 1. Human accountability
@@ -59,7 +59,7 @@
    - Rule: Boundaries, constraints, and non-goals MUST be stated before execution.
    - Why it exists: Avoids scope creep and ambiguity.
 7. Respect policy hierarchy
-   - Rule: Conflicts MUST be resolved using Section 0 precedence rules.
+   - Rule: Conflicts MUST be resolved using [Section 0](#0-purpose-and-scope) precedence rules.
    - Why it exists: Prevents inconsistent application of rules.
 ## 2. Roles and Responsibility Boundaries
 ## 3. Change Classification and Risk Model
