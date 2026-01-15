@@ -428,6 +428,31 @@
 7. Changes introducing new dependencies.
 8. Changes with limited or missing verification evidence.
 ## 10. Release and Rollback Discipline
+### Preconditions for release
+1. Verification gates MUST be complete per [Section 9](#9-review-and-verification-gates).
+2. Required artefacts MUST be approved per [Section 11](#11-documentation-and-artefacts).
+3. Risk classification MUST be current and documented per [Section 3](#3-change-classification-and-risk-model).
+4. Release and rollback plans MUST be approved for medium or large changes.
+5. If preconditions are not met, release MUST stop and follow [Section 13](#13-compliance-and-enforcement).
+
+### Rollback plan requirements
+1. Rollback steps MUST be defined, ordered, and testable.
+2. Rollback MUST specify triggers and decision authority.
+3. Rollback MUST include data or state recovery steps where required.
+4. Rollback MUST include verification steps after execution.
+5. If rollback cannot be executed safely, release MUST stop and escalate.
+
+### Monitoring expectations
+1. Monitoring signals MUST be defined for critical outcomes.
+2. Monitoring MUST include alert thresholds for failure conditions.
+3. Monitoring MUST be aligned to acceptance criteria and non-goals.
+4. Monitoring ownership MUST be assigned before release.
+
+### Post-release verification steps
+1. Verify critical outcomes using documented criteria.
+2. Confirm error and failure signals remain within thresholds.
+3. Confirm rollback readiness remains available.
+4. Record outcomes and follow-up actions in release artefacts.
 ## 11. Documentation and Artefacts
 ## 12. Learning and Continuous Improvement
 ## 13. Compliance and Enforcement

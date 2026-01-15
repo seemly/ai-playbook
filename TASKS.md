@@ -241,7 +241,7 @@ Include:
 
 ---
 
-## Task 11 - Section 10: Release and Rollback Discipline [ ]
+## Task 11 - Section 10: Release and Rollback Discipline [x]
 
 Fill Section 10.
 
