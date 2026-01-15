@@ -501,6 +501,30 @@
 3. Deprecation MUST include a cut-off date and verification criteria.
 4. If a deprecation affects workflows, work MUST update [Section 4](#4-mandatory-workflow-order-of-execution).
 ## 13. Compliance and Enforcement
+### Enforcement expectations
+1. Enforcement MUST be automated where feasible and recorded.
+2. Enforcement rules MUST align with [Section 9](#9-review-and-verification-gates).
+3. If enforcement checks fail, work MUST stop and remediation MUST be recorded.
+4. Enforcement scope MUST cover artefacts in [Section 11](#11-documentation-and-artefacts).
+
+### Non-compliance handling
+1. Non-compliance MUST be recorded with scope, impact, and owner.
+2. Non-compliance MUST trigger a risk reclassification per [Section 3](#3-change-classification-and-risk-model).
+3. Remediation MUST include deadlines and verification steps.
+4. Repeat non-compliance MUST trigger a playbook update per [Section 12](#12-learning-and-continuous-improvement).
+
+### Exceptions process
+1. Exceptions MUST be requested before execution begins.
+2. Exceptions MUST include scope, duration, and rationale.
+3. Exceptions MUST include compensating controls and verification steps.
+4. Exceptions MUST be approved by accountable owners.
+5. If an exception affects release criteria, [Section 10](#10-release-and-rollback-discipline) MUST be followed.
+
+### Measuring adherence
+1. Adherence metrics MUST track verification completion and artefact coverage.
+2. Adherence metrics MUST track exception frequency and outcomes.
+3. Adherence metrics MUST be reviewed on a regular cadence.
+4. If adherence falls below agreed thresholds, remediation MUST be planned.
 ## 14. Relationship to Stack-Specific Playbooks
 ## 15. Glossary and Definitions
 ## 16. Appendix
