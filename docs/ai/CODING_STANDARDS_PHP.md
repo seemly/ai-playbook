@@ -5,7 +5,6 @@
 - [1. Style and Naming](#1-style-and-naming)
 - [2. Formatting and Linting](#2-formatting-and-linting)
 - [3. Security Patterns](#3-security-patterns)
-- [4. WordPress APIs](#4-wordpress-apis)
 
 ## 0. Purpose and Scope
 ### Purpose
@@ -14,7 +13,7 @@
 
 ### Scope
 - Applies to all PHP in this repository.
-- Supplements [AI Playbook](AI_PLAYBOOK.md) and the [Coding Standards Index](AI_PLAYBOOK_CODING_STANDARDS.md).
+- Supplements [AI Playbook](AI_PLAYBOOK.md) and the [Coding Standards Index](CODING_STANDARDS.md).
 
 ## 1. Style and Naming
 - Follow repo-configured PHP coding standards when available.

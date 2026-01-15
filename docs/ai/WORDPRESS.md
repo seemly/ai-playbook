@@ -36,7 +36,7 @@
 ## 1. How to Use
 - Read [AI Playbook](AI_PLAYBOOK.md) first for baseline rules.
 - Use this overlay for WordPress-specific decisions and workflows.
-- Use the [Coding Standards Index](AI_PLAYBOOK_CODING_STANDARDS.md) for language rules.
+- Use the [Coding Standards Index](CODING_STANDARDS.md) for language rules.
 - If a rule is missing or unclear, stop and request guidance.
 
 ## 2. Decision Tree
@@ -146,11 +146,11 @@
 - Provide migration notes for consumers.
 
 ## 19. Coding Standards References
-- [Coding Standards Index](AI_PLAYBOOK_CODING_STANDARDS.md)
-- [AI Coding Standards (PHP)](AI_PLAYBOOK_CODING_STANDARDS_PHP.md)
-- [AI Coding Standards (JS/TS)](AI_PLAYBOOK_CODING_STANDARDS_JS.md)
-- [AI Coding Standards (CSS)](AI_PLAYBOOK_CODING_STANDARDS_CSS.md)
-- [AI Coding Standards (WordPress)](AI_PLAYBOOK_CODING_STANDARDS_WORDPRESS.md)
+- [Coding Standards Index](CODING_STANDARDS.md)
+- [AI Coding Standards (PHP)](CODING_STANDARDS_PHP.md)
+- [AI Coding Standards (JS/TS)](CODING_STANDARDS_JS.md)
+- [AI Coding Standards (CSS)](CODING_STANDARDS_CSS.md)
+- [AI Coding Standards (WordPress)](CODING_STANDARDS_WORDPRESS.md)
 
 ## 20. References and Links
 - Add WordPress official docs links as needed.

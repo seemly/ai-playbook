@@ -14,7 +14,7 @@
 
 ### Scope
 - Applies to block editor code, build scripts, and frontend JS.
-- Supplements [AI Playbook](AI_PLAYBOOK.md), the [WordPress overlay](AI_PLAYBOOK_WORDPRESS.md), and the [Coding Standards Index](AI_PLAYBOOK_CODING_STANDARDS.md).
+- Supplements [AI Playbook](AI_PLAYBOOK.md), the [WordPress overlay](WORDPRESS.md), and the [Coding Standards Index](CODING_STANDARDS.md).
 
 ## 1. Style and Naming
 - Follow repo-configured ESLint and formatting rules.

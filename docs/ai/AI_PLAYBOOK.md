@@ -552,9 +552,9 @@
 - If resolution is unclear, work MUST stop and follow [Section 13](#13-compliance-and-enforcement).
 
 ### Known stack playbooks
-- WordPress: [AI WordPress Playbook](AI_PLAYBOOK_WORDPRESS.md)
-- WordPress Coding Standards: [AI Coding Standards Index](AI_PLAYBOOK_CODING_STANDARDS.md)
-- WordPress Coding Standards Overlay: [AI Coding Standards (WordPress)](AI_PLAYBOOK_CODING_STANDARDS_WORDPRESS.md)
+- WordPress: [AI WordPress Playbook](WORDPRESS.md)
+- WordPress Coding Standards: [AI Coding Standards Index](CODING_STANDARDS.md)
+- WordPress Coding Standards Overlay: [AI Coding Standards (WordPress)](CODING_STANDARDS_WORDPRESS.md)
 
 ### Process for adding a new stack playbook
 - A stack playbook MUST declare scope, owners, and target stack.
