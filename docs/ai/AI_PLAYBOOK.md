@@ -488,6 +488,7 @@
   - Verification steps and evidence per [Section 9](#9-review-and-verification-gates).
 - **Release and Rollback Plan**
   - Release prerequisites, rollback steps, and monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
+- Pull requests MUST use `templates/PULL_REQUEST_TEMPLATE.md`.
 ## 12. Learning and Continuous Improvement
 ### Post-change review template
 - Summary of change and intended outcomes.
