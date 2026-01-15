@@ -36,27 +36,27 @@
   - [ ] Everyone SHOULD record required artefacts per Section 11.
   - [ ] Re-evaluate Section 0 when scope changes or new constraints appear.
 ## 1. Core Principles (Non-Negotiable)
-- **Principle 1: Human accountability**
-  - Rule: A human owner MUST remain accountable for every change and outcome.
-  - Why it exists: Ensures ownership and legal responsibility.
-- **Principle 2: Safety before speed**
-  - Rule: Safety and reversibility MUST take priority over delivery speed.
-  - Why it exists: Reduces harm and recovery cost.
-- **Principle 3: Evidence-based decisions**
-  - Rule: Decisions MUST be supported by recorded evidence and rationale.
-  - Why it exists: Improves traceability and auditability.
-- **Principle 4: Determinism first**
-  - Rule: Changes MUST be made testable and repeatable through determinism scaffolding.
-  - Why it exists: Prevents flaky outcomes and hidden regressions.
-- **Principle 5: Minimal change surface**
-  - Rule: Changes SHOULD be the smallest coherent unit that meets the goal.
-  - Why it exists: Limits blast radius and review burden.
-- **Principle 6: Explicit boundaries**
-  - Rule: Boundaries, constraints, and non-goals MUST be stated before execution.
-  - Why it exists: Avoids scope creep and ambiguity.
-- **Principle 7: Respect policy hierarchy**
-  - Rule: Conflicts MUST be resolved using Section 0 precedence rules.
-  - Why it exists: Prevents inconsistent application of rules.
+1. Human accountability
+   - Rule: A human owner MUST remain accountable for every change and outcome.
+   - Why it exists: Ensures ownership and legal responsibility.
+2. Safety before speed
+   - Rule: Safety and reversibility MUST take priority over delivery speed.
+   - Why it exists: Reduces harm and recovery cost.
+3. Evidence-based decisions
+   - Rule: Decisions MUST be supported by recorded evidence and rationale.
+   - Why it exists: Improves traceability and auditability.
+4. Determinism first
+   - Rule: Changes MUST be made testable and repeatable through determinism scaffolding.
+   - Why it exists: Prevents flaky outcomes and hidden regressions.
+5. Minimal change surface
+   - Rule: Changes SHOULD be the smallest coherent unit that meets the goal.
+   - Why it exists: Limits blast radius and review burden.
+6. Explicit boundaries
+   - Rule: Boundaries, constraints, and non-goals MUST be stated before execution.
+   - Why it exists: Avoids scope creep and ambiguity.
+7. Respect policy hierarchy
+   - Rule: Conflicts MUST be resolved using Section 0 precedence rules.
+   - Why it exists: Prevents inconsistent application of rules.
 ## 2. Roles and Responsibility Boundaries
 ## 3. Change Classification and Risk Model
 ## 4. Mandatory Workflow (Order of Execution)
