@@ -99,6 +99,59 @@
 7. If AI output cannot be validated against scope or constraints, work MUST stop and request clarification.
 8. If any prohibited action in [Section 7](#7-ai-usage-rules) would be required, work MUST stop and request an alternative.
 ## 3. Change Classification and Risk Model
+### Change size definitions
+- **Small**
+  1. Limited to a single component or isolated change surface.
+  2. Low risk of cross-cutting impact or behavioural shift.
+  3. Reversal is straightforward without complex dependency changes.
+- **Medium**
+  1. Spans multiple components or interfaces within a bounded area.
+  2. Moderate risk of behavioural change or integration impact.
+  3. Reversal requires coordinated changes but remains feasible.
+- **Large**
+  1. Spans multiple domains, interfaces, or shared contracts.
+  2. High risk of systemic impact or ambiguous behaviour.
+  3. Reversal is complex or requires multi-step remediation.
+
+### Risk dimensions
+- **Blast radius**
+  1. The number of components, users, or workflows affected by failure.
+  2. The scope of downstream impact if the change behaves incorrectly.
+- **Reversibility**
+  1. The effort and time required to undo the change safely.
+  2. The residual impact after rollback or remediation.
+- **Ambiguity**
+  1. The level of uncertainty in requirements, outcomes, or constraints.
+  2. The degree of hidden coupling or unknown dependencies.
+
+### Required artefacts matrix
+| Change size | Low risk | Medium risk | High risk |
+| --- | --- | --- | --- |
+| Small | Change Brief, Safety Net Plan | Change Brief, Safety Net Plan, Verification Checklist | Change Brief, Safety Net Plan, Verification Checklist, Execution Plan |
+| Medium | Change Brief, Safety Net Plan, Execution Plan | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan |
+| Large | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan, ADR |
+- Artefact definitions and minimum contents MUST follow [Section 11](#11-documentation-and-artefacts).
+
+### Forbidden change patterns
+1. Changing acceptance criteria without updating required artefacts.
+2. Shipping changes with undefined ownership or accountability.
+3. Skipping verification gates in [Section 9](#9-review-and-verification-gates).
+4. Introducing new dependencies without explicit approval.
+5. Expanding scope after execution begins without reclassification.
+6. Proceeding with ambiguous requirements or unstated constraints.
+7. Modifying shared contracts without impact assessment.
+8. Bypassing determinism scaffolding for tests in [Section 6](#6-determinism-scaffolding).
+9. Making irreversible changes without a rollback plan.
+10. Releasing without evidence of required tests or checks.
+
+### Stop and ask criteria
+1. If change size or risk cannot be agreed, work MUST stop and Section 2 MUST be followed.
+2. If any risk dimension is high and artefacts are missing, work MUST stop until artefacts exist.
+3. If a change triggers a forbidden pattern, work MUST stop and a decision MUST be recorded.
+4. If scope expands beyond the current classification, work MUST stop and reclassify.
+5. If dependencies or contracts change unexpectedly, work MUST stop and re-evaluate risk.
+6. If ambiguity remains after clarification attempts, work MUST stop and a decision MUST be recorded.
+7. If verification evidence is missing for the current risk level, work MUST stop and follow [Section 9](#9-review-and-verification-gates).
 ## 4. Mandatory Workflow (Order of Execution)
 ## 5. Test Strategy Decision Framework
 ## 6. Determinism Scaffolding

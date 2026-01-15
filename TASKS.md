@@ -145,7 +145,7 @@ Constraints:
 
 ---
 
-## Task 4 - Section 3: Change Classification and Risk Model [ ]
+## Task 4 - Section 3: Change Classification and Risk Model [x]
 
 Fill Section 3.
 
