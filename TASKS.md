@@ -1,20 +1,14 @@
+# AI Playbook - Codex Task Plan
 
+This file defines the section-by-section task plan for building the AI Development Playbook. Each task MUST be self-contained, commit-sized, deterministic, and safe to run without prior chat context.
 
-# AI Playbook — Codex Task Plan
+## How to use this plan
+- Tasks MUST run in order and MUST NOT be skipped.
+- If a task target is already complete, work MUST stop and confirmation MUST be requested.
+- If instructions conflict, work MUST stop and Section 13 MUST be followed.
+- If scope changes, update this plan before proceeding.
 
-This file defines the **section-by-section task plan** for building the AI Development Playbook using OpenAI Codex (or any agentic coding tool).
-
-Each task is designed to be:
-- self-contained,
-- commit-sized,
-- deterministic,
-- safe to run without prior chat context.
-
-Run tasks **in order**. Do not skip ahead.
-
----
-
-## Global instruction (prepend to every Codex task)
+## Global instruction (prepend to every task prompt)
 
 Paste this at the top of every Codex prompt:
 
@@ -34,7 +28,7 @@ Writing rules:
 
 ---
 
-## Task 0 — Repository scaffold (one-time)
+## Task 0 - Repository scaffold (one-time) [x]
 
 **Goal:** Create the initial structure with no prose dependency on prior context.
 
@@ -99,16 +93,18 @@ Constraints:
 - Return a short list of files created.
 ```
 
-Commit after completion.
+**Stop conditions:**
+- If any file already exists with content, stop and confirm whether to overwrite.
+- If repo rules require commits, request explicit approval before committing.
 
 ---
 
-## Task 1 — Section 0: Purpose and Scope
+## Task 1 - Section 0: Purpose and Scope [x]
 
 Fill Section 0 of `docs/ai/AI_PLAYBOOK.md`.
 
 Include:
-- Purpose (1–3 bullets).
+- Purpose (1 to 3 bullets).
 - Scope boundaries (governed vs not governed).
 - Authority and precedence rules.
 - How humans and AI tools are expected to use this document.
@@ -119,7 +115,7 @@ Constraints:
 
 ---
 
-## Task 2 — Section 1: Core Principles (Non-Negotiable)
+## Task 2 - Section 1: Core Principles (Non-Negotiable) [ ]
 
 Fill Section 1.
 
@@ -127,7 +123,7 @@ Include exactly 7 principles.
 
 For each principle:
 - One sentence normative rule.
-- One short “Why it exists” bullet (max 12 words).
+- One short "Why it exists" bullet (max 12 words).
 
 Constraints:
 - Conceptual only.
@@ -135,7 +131,7 @@ Constraints:
 
 ---
 
-## Task 3 — Section 2: Roles and Responsibility Boundaries
+## Task 3 - Section 2: Roles and Responsibility Boundaries [ ]
 
 Fill Section 2.
 
@@ -149,7 +145,7 @@ Constraints:
 
 ---
 
-## Task 4 — Section 3: Change Classification and Risk Model
+## Task 4 - Section 3: Change Classification and Risk Model [ ]
 
 Fill Section 3.
 
@@ -162,21 +158,21 @@ Include:
 
 ---
 
-## Task 5 — Section 4: Mandatory Workflow (Order of Execution)
+## Task 5 - Section 4: Mandatory Workflow (Order of Execution) [ ]
 
 Fill Section 4.
 
 Include:
-- The only permitted workflow as a numbered list (6–10 steps).
+- The only permitted workflow as a numbered list (6 to 10 steps).
 - For each step: input, action, output (max 3 bullets each).
 - Explicit rule forbidding skipping steps without exception.
 
 Constraints:
-- Refer to Sections 5–10 for detail.
+- Refer to Sections 5 to 10 for detail.
 
 ---
 
-## Task 6 — Section 5: Test Strategy Decision Framework
+## Task 6 - Section 5: Test Strategy Decision Framework [ ]
 
 Fill Section 5.
 
@@ -191,7 +187,7 @@ Include:
 
 ---
 
-## Task 7 — Section 6: Determinism Scaffolding
+## Task 7 - Section 6: Determinism Scaffolding [ ]
 
 Fill Section 6.
 
@@ -200,11 +196,11 @@ Include:
 - Normalising nondeterminism rules.
 - Fixture and data stability rules.
 - Acceptable assertions vs forbidden assertions (minimum 8 each).
-- “Safety net ready” checklist (minimum 8).
+- "Safety net ready" checklist (minimum 8).
 
 ---
 
-## Task 8 — Section 7: AI Usage Rules
+## Task 8 - Section 7: AI Usage Rules [ ]
 
 Fill Section 7.
 
@@ -217,7 +213,7 @@ Include:
 
 ---
 
-## Task 9 — Section 8: Change Execution Rules
+## Task 9 - Section 8: Change Execution Rules [ ]
 
 Fill Section 8.
 
@@ -230,7 +226,7 @@ Include:
 
 ---
 
-## Task 10 — Section 9: Review and Verification Gates
+## Task 10 - Section 9: Review and Verification Gates [ ]
 
 Fill Section 9.
 
@@ -245,7 +241,7 @@ Include:
 
 ---
 
-## Task 11 — Section 10: Release and Rollback Discipline
+## Task 11 - Section 10: Release and Rollback Discipline [ ]
 
 Fill Section 10.
 
@@ -257,7 +253,7 @@ Include:
 
 ---
 
-## Task 12 — Section 11: Documentation and Artefacts
+## Task 12 - Section 11: Documentation and Artefacts [ ]
 
 Fill Section 11.
 
@@ -273,7 +269,7 @@ Do not include examples.
 
 ---
 
-## Task 13 — Section 12: Learning and Continuous Improvement
+## Task 13 - Section 12: Learning and Continuous Improvement [ ]
 
 Fill Section 12.
 
@@ -284,7 +280,7 @@ Include:
 
 ---
 
-## Task 14 — Section 13: Compliance and Enforcement
+## Task 14 - Section 13: Compliance and Enforcement [ ]
 
 Fill Section 13.
 
@@ -296,7 +292,7 @@ Include:
 
 ---
 
-## Task 15 — Section 14: Relationship to Stack-Specific Playbooks
+## Task 15 - Section 14: Relationship to Stack-Specific Playbooks [ ]
 
 Fill Section 14.
 
@@ -308,11 +304,11 @@ Include:
 
 ---
 
-## Task 16 — Section 15: Glossary and Definitions
+## Task 16 - Section 15: Glossary and Definitions [ ]
 
 Fill Section 15.
 
-Define key terms concisely (1–2 sentences each), including:
+Define key terms concisely (1 to 2 sentences each), including:
 - determinism scaffolding
 - safety net
 - characterisation test
@@ -328,7 +324,7 @@ Define key terms concisely (1–2 sentences each), including:
 
 ---
 
-## Task 17 — Section 16: Appendix (Examples)
+## Task 17 - Section 16: Appendix (Examples) [ ]
 
 Fill Section 16.
 
@@ -343,7 +339,7 @@ Keep examples generic and stack-agnostic.
 
 ---
 
-## Task 18 — Quality control pass (final)
+## Task 18 - Quality control pass (final) [ ]
 
 Audit `docs/ai/AI_PLAYBOOK.md` for:
 - duplication,
@@ -355,4 +351,6 @@ Audit `docs/ai/AI_PLAYBOOK.md` for:
 
 Apply fixes directly and produce a short changelog.
 
-Commit as: `chore(ai-playbook): quality and consistency pass`
+**Stop conditions:**
+- If fixes require new sections or scope expansion, stop and seek approval.
+- If changes exceed the documented constraints, stop and request guidance.
