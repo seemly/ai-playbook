@@ -158,7 +158,7 @@ Include:
 
 ---
 
-## Task 5 - Section 4: Mandatory Workflow (Order of Execution) [ ]
+## Task 5 - Section 4: Mandatory Workflow (Order of Execution) [x]
 
 Fill Section 4.
 

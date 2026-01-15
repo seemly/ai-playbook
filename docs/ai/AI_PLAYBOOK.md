@@ -153,6 +153,43 @@
 6. If ambiguity remains after clarification attempts, work MUST stop and a decision MUST be recorded.
 7. If verification evidence is missing for the current risk level, work MUST stop and follow [Section 9](#9-review-and-verification-gates).
 ## 4. Mandatory Workflow (Order of Execution)
+### Workflow rule
+1. Steps MUST NOT be skipped or reordered.
+2. If a step cannot be completed, work MUST stop and follow [Section 13](#13-compliance-and-enforcement).
+
+### Workflow
+1. Classify change and risk
+   - Input: Current scope, constraints, and intended outcomes.
+   - Action: Classify size and risk using [Section 3](#3-change-classification-and-risk-model).
+   - Output: Recorded change size, risk level, and rationale.
+2. Define artefacts and plan
+   - Input: Classification outcome and requirements.
+   - Action: Prepare required artefacts per [Section 11](#11-documentation-and-artefacts).
+   - Output: Approved Change Brief and execution plan draft.
+3. Design and boundary decisions
+   - Input: Artefact drafts and constraints.
+   - Action: Confirm boundaries and decisions with [Section 6](#6-determinism-scaffolding) in view.
+   - Output: Approved boundaries, assumptions, and constraints.
+4. Implement change
+   - Input: Approved plan and boundaries.
+   - Action: Make changes within scope following [Section 8](#8-change-execution-rules).
+   - Output: Traceable changes ready for verification.
+5. Build safety net
+   - Input: Updated change set.
+   - Action: Select and apply testing strategy per [Section 5](#5-test-strategy-decision-framework).
+   - Output: Evidence of test coverage and determinism scaffolding.
+6. Verify and review
+   - Input: Change set and test evidence.
+   - Action: Run verification gates per [Section 9](#9-review-and-verification-gates).
+   - Output: Recorded verification results and decision.
+7. Release and rollback readiness
+   - Input: Verification results and risk level.
+   - Action: Prepare release and rollback per [Section 10](#10-release-and-rollback-discipline).
+   - Output: Release or rollback plan with approval status.
+8. Close and record
+   - Input: Release outcome and evidence.
+   - Action: Record artefacts and outcomes per [Section 11](#11-documentation-and-artefacts).
+   - Output: Updated documentation and audit trail.
 ## 5. Test Strategy Decision Framework
 ## 6. Determinism Scaffolding
 ## 7. AI Usage Rules
