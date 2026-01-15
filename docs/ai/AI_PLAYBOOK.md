@@ -32,9 +32,8 @@
 - Humans MUST read [Section 4](#4-mandatory-workflow-order-of-execution) before starting any change.
 - Humans SHOULD classify change risk using [Section 3](#3-change-classification-and-risk-model).
 - AI tools MUST follow [Section 7](#7-ai-usage-rules) and [Section 8](#8-change-execution-rules) verbatim.
-- AI tools MUST stop and request input when scope is unclear.
 - AI tools SHOULD reference section numbers when requesting decisions.
-- If a mandatory step cannot be completed, work MUST stop and [Section 13](#13-compliance-and-enforcement) MUST be followed.
+- Stop conditions MUST follow [Section 2](#2-roles-and-responsibility-boundaries).
 - Everyone MUST verify gates using [Section 9](#9-review-and-verification-gates) before release.
 - Everyone SHOULD record required artefacts per [Section 11](#11-documentation-and-artefacts).
 - Re-evaluate [Section 0](#0-purpose-and-scope) when scope changes or new constraints appear.
@@ -77,17 +76,16 @@
 
 ### AI MUST NOT actions
 - AI MUST NOT approve or authorise a change.
-- AI MUST NOT change scope, goals, or acceptance criteria without human approval.
-- AI MUST NOT execute releases or rollbacks.
+- AI MUST NOT change goals, scope, or acceptance criteria without human approval.
+- AI MUST NOT take ownership of verification or release decisions.
 - AI MUST NOT alter compliance rules or enforcement decisions.
-- AI MUST NOT bypass or disable verification gates in [Section 9](#9-review-and-verification-gates).
-- AI MUST NOT introduce dependencies without explicit approval.
 - AI MUST NOT modify security-sensitive material without human review.
 - AI MUST NOT edit outside agreed files or directories.
 - AI MUST NOT claim a step is complete without evidence.
 - AI MUST NOT proceed when a stop condition is triggered.
-- AI MUST NOT invent requirements, constraints, or acceptance criteria.
 - AI MUST NOT conceal uncertainty or unresolved ambiguity.
+- AI MUST NOT resolve conflicts without human decision.
+- AI MUST NOT perform any prohibited action listed in [Section 7](#7-ai-usage-rules).
 
 ### Stop and ask conditions
 - If ownership is unclear for any area in the matrix, work MUST stop and a human decision MUST be recorded.
@@ -136,12 +134,10 @@
 - Changing acceptance criteria without updating required artefacts.
 - Shipping changes with undefined ownership or accountability.
 - Skipping verification gates in [Section 9](#9-review-and-verification-gates).
-- Introducing new dependencies without explicit approval.
+- Violating determinism requirements in [Section 6](#6-determinism-scaffolding).
+- Violating change execution requirements in [Section 8](#8-change-execution-rules).
 - Expanding scope after execution begins without reclassification.
 - Proceeding with ambiguous requirements or unstated constraints.
-- Modifying shared contracts without impact assessment.
-- Bypassing determinism scaffolding for tests in [Section 6](#6-determinism-scaffolding).
-- Making irreversible changes without a rollback plan.
 - Releasing without evidence of required tests or checks.
 
 ### Stop and ask criteria
@@ -208,15 +204,14 @@
 
 ### What does NOT count as a safety net
 - Manual verification without recorded evidence.
-- Assertions that only check for successful execution.
 - Tests that rely on unstable or random data.
 - Tests that are not repeatable in the same environment.
 - Tests that only check formatting or presentation.
 - Tests that skip error paths and failure scenarios.
 - Tests that depend on shared state without isolation.
-- Tests that pass without verifying outcomes against acceptance criteria.
 - Tests that are flaky or intermittently failing.
 - Tests that are not reviewed against risk classification.
+- Assertions or checks that violate [Section 6](#6-determinism-scaffolding).
 
 ### Minimum acceptable test quality checklist
 - Tests MUST map to acceptance criteria and non-goals.
@@ -443,9 +438,7 @@
 - If rollback cannot be executed safely, release MUST stop and escalate.
 
 ### Monitoring expectations
-- Monitoring signals MUST be defined for critical outcomes.
-- Monitoring MUST include alert thresholds for failure conditions.
-- Monitoring MUST be aligned to acceptance criteria and non-goals.
+- Monitoring MUST satisfy observability requirements in [Section 9](#9-review-and-verification-gates).
 - Monitoring ownership MUST be assigned before release.
 
 ### Post-release verification steps
@@ -472,13 +465,9 @@
   - Options considered and trade-offs.
   - Consequences and follow-up actions.
 - **Verification Checklist**
-  - Automated verification steps.
-  - Manual verification steps.
-  - Observability signals per [Section 9](#9-review-and-verification-gates).
+  - Verification steps and evidence per [Section 9](#9-review-and-verification-gates).
 - **Release and Rollback Plan**
-  - Release prerequisites and approvals.
-  - Rollback triggers, steps, and verification.
-  - Monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
+  - Release prerequisites, rollback steps, and monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
 ## 12. Learning and Continuous Improvement
 ### Post-change review template
 - Summary of change and intended outcomes.
