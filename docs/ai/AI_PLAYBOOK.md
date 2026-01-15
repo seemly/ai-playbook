@@ -454,6 +454,31 @@
 3. Confirm rollback readiness remains available.
 4. Record outcomes and follow-up actions in release artefacts.
 ## 11. Documentation and Artefacts
+### Required artefacts and minimum contents
+- **Change Brief**
+  1. Goal and non-goals.
+  2. Scope boundaries and constraints.
+  3. Acceptance criteria and risk classification.
+- **Execution Plan**
+  1. Ordered steps aligned to [Section 4](#4-mandatory-workflow-order-of-execution).
+  2. Dependencies and assumptions.
+  3. Verification checkpoints and evidence outputs.
+- **Safety Net Plan**
+  1. Selected testing strategy per [Section 5](#5-test-strategy-decision-framework).
+  2. Boundaries and determinism controls per [Section 6](#6-determinism-scaffolding).
+  3. Coverage for success and failure paths.
+- **Architecture Decision Record**
+  1. Decision statement and rationale.
+  2. Options considered and trade-offs.
+  3. Consequences and follow-up actions.
+- **Verification Checklist**
+  1. Automated verification steps.
+  2. Manual verification steps.
+  3. Observability signals per [Section 9](#9-review-and-verification-gates).
+- **Release and Rollback Plan**
+  1. Release prerequisites and approvals.
+  2. Rollback triggers, steps, and verification.
+  3. Monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
 ## 12. Learning and Continuous Improvement
 ## 13. Compliance and Enforcement
 ## 14. Relationship to Stack-Specific Playbooks

@@ -253,7 +253,7 @@ Include:
 
 ---
 
-## Task 12 - Section 11: Documentation and Artefacts [ ]
+## Task 12 - Section 11: Documentation and Artefacts [x]
 
 Fill Section 11.
 
