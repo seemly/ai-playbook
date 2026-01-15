@@ -547,4 +547,17 @@
 3. A stack playbook MUST be reviewed using [Section 9](#9-review-and-verification-gates).
 4. If a stack playbook adds new artefacts, [Section 11](#11-documentation-and-artefacts) MUST be updated.
 ## 15. Glossary and Definitions
+### Terms
+- **Determinism scaffolding**: The set of controls that make tests repeatable and outcomes stable.
+- **Safety net**: The combined evidence that changes behave as intended and failures are detectable.
+- **Characterisation test**: A test that captures current behaviour to prevent unintended changes.
+- **Contract test**: A test that verifies behaviour at a defined boundary between parties.
+- **Boundary**: The defined interface where inputs, outputs, and failures are observed.
+- **Blast radius**: The extent of impact if a change fails or misbehaves.
+- **Reversibility**: The effort required to safely undo a change.
+- **Ambiguity**: The level of uncertainty about requirements, behaviour, or constraints.
+- **Stop condition**: A trigger that requires work to halt until resolved.
+- **Acceptance criteria**: The measurable conditions that define success for a change.
+- **Non-goal**: A declared out-of-scope outcome that must not be delivered.
+- **Architecture Decision Record**: A record of a decision, its rationale, and consequences.
 ## 16. Appendix

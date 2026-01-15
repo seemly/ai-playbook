@@ -304,7 +304,7 @@ Include:
 
 ---
 
-## Task 16 - Section 15: Glossary and Definitions [ ]
+## Task 16 - Section 15: Glossary and Definitions [x]
 
 Fill Section 15.
 
