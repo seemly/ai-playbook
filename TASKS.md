@@ -115,7 +115,7 @@ Constraints:
 
 ---
 
-## Task 2 - Section 1: Core Principles (Non-Negotiable) [ ]
+## Task 2 - Section 1: Core Principles (Non-Negotiable) [x]
 
 Fill Section 1.
 
