@@ -408,7 +408,7 @@
 - Dependencies follow [Section 8](#8-change-execution-rules) rules.
 - Determinism scaffolding is applied where needed.
 - Failure handling and recovery paths are complete.
-- Logging and error reporting are sufficient for verification.
+- Logging and error reporting MUST support verification evidence in this section.
 - Review evidence includes outputs and data changes.
 - Scope changes are reclassified and documented.
 - Security-sensitive changes have human review.
@@ -446,7 +446,7 @@
 - Verification gates MUST be complete per [Section 9](#9-review-and-verification-gates).
 - Required artefacts MUST be approved per [Section 11](#11-documentation-and-artefacts).
 - Risk classification MUST be current and documented per [Section 3](#3-change-classification-and-risk-model).
-- Release and rollback plans MUST be approved for medium or large changes.
+- Release and rollback plans MUST be approved for medium or large changes per [Section 3](#3-change-classification-and-risk-model).
 - If preconditions are not met, release MUST stop and follow [Section 13](#13-compliance-and-enforcement).
 
 ### Rollback plan requirements
@@ -459,6 +459,7 @@
 ### Monitoring expectations
 - Monitoring MUST satisfy observability requirements in [Section 9](#9-review-and-verification-gates).
 - Monitoring ownership MUST be assigned before release.
+- If monitoring ownership or signals are missing, release MUST stop and follow [Section 13](#13-compliance-and-enforcement).
 
 ### Post-release verification steps
 - Verify critical outcomes using documented criteria.
@@ -531,7 +532,7 @@
 ### Measuring adherence
 - Adherence metrics MUST track verification completion and artefact coverage.
 - Adherence metrics MUST track exception frequency and outcomes.
-- Adherence metrics MUST be reviewed on a regular cadence.
+- Adherence metrics MUST be reviewed on a defined cadence with accountable owners.
 - If adherence falls below agreed thresholds, remediation MUST be planned.
 ## 14. Relationship to Stack-Specific Playbooks
 ### Layering model
