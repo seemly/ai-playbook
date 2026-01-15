@@ -191,6 +191,46 @@
    - Action: Record artefacts and outcomes per [Section 11](#11-documentation-and-artefacts).
    - Output: Updated documentation and audit trail.
 ## 5. Test Strategy Decision Framework
+### Decision table
+| Situation | Primary strategy | Minimum requirements |
+| --- | --- | --- |
+| New behaviour with clear acceptance criteria | True test-driven development | Tests defined before change, assertions aligned to acceptance criteria |
+| Legacy behaviour with unclear intent | Characterisation testing | Baseline tests capturing current behaviour before changes |
+| External contract or integration boundary | Contract testing | Tests validating inputs, outputs, and error handling |
+| High ambiguity or unknown coupling | Characterisation testing | Baseline coverage plus explicit risk notes |
+| High risk change with defined behaviour | True test-driven development | New tests plus coverage of critical paths |
+| Mixed new and legacy behaviour | Combined strategy | Characterisation for existing behaviour, true test-driven development for new behaviour |
+
+### Definitions
+1. **True test-driven development**: Tests MUST be written before implementation and MUST drive design decisions.
+2. **Characterisation testing**: Tests MUST capture existing behaviour without altering outcomes before refactoring.
+3. **Contract testing**: Tests MUST validate behaviour at a defined boundary and MUST detect incompatible changes.
+
+### What does NOT count as a safety net
+1. Manual verification without recorded evidence.
+2. Assertions that only check for successful execution.
+3. Tests that rely on unstable or random data.
+4. Tests that are not repeatable in the same environment.
+5. Tests that only check formatting or presentation.
+6. Tests that skip error paths and failure scenarios.
+7. Tests that depend on shared state without isolation.
+8. Tests that pass without verifying outcomes against acceptance criteria.
+9. Tests that are flaky or intermittently failing.
+10. Tests that are not reviewed against risk classification.
+
+### Minimum acceptable test quality checklist
+1. Tests MUST map to acceptance criteria and non-goals.
+2. Tests MUST cover success and failure paths relevant to risk.
+3. Tests MUST be deterministic per [Section 6](#6-determinism-scaffolding).
+4. Tests MUST isolate behaviour at the intended boundary.
+5. Tests MUST include clear, specific assertions.
+6. Tests MUST record setup, inputs, and expected outcomes.
+7. Tests MUST avoid shared mutable state across cases.
+8. Tests MUST run within agreed time limits.
+9. Tests MUST include coverage for rollback or reversibility expectations.
+10. Tests MUST be reviewed against the current change classification in [Section 3](#3-change-classification-and-risk-model).
+11. Tests SHOULD document any known gaps and risk trade-offs.
+12. Tests SHOULD be updated when acceptance criteria change.
 ## 6. Determinism Scaffolding
 ## 7. AI Usage Rules
 ## 8. Change Execution Rules

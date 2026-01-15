@@ -172,7 +172,7 @@ Constraints:
 
 ---
 
-## Task 6 - Section 5: Test Strategy Decision Framework [ ]
+## Task 6 - Section 5: Test Strategy Decision Framework [x]
 
 Fill Section 5.
 
