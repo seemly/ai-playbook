@@ -147,10 +147,10 @@
 
 ## 19. Coding Standards References
 - [Coding Standards Index](CODING_STANDARDS.md)
-- [AI Coding Standards (PHP)](CODING_STANDARDS_PHP.md)
-- [AI Coding Standards (JS/TS)](CODING_STANDARDS_JS.md)
-- [AI Coding Standards (CSS)](CODING_STANDARDS_CSS.md)
-- [AI Coding Standards (WordPress)](CODING_STANDARDS_WORDPRESS.md)
+- [AI Coding Standards (PHP)](coding-standards/CODING_STANDARDS_PHP.md)
+- [AI Coding Standards (JS/TS)](coding-standards/CODING_STANDARDS_JS.md)
+- [AI Coding Standards (CSS)](coding-standards/CODING_STANDARDS_CSS.md)
+- [AI Coding Standards (WordPress)](coding-standards/CODING_STANDARDS_WORDPRESS.md)
 
 ## 20. References and Links
 - Add WordPress official docs links as needed.

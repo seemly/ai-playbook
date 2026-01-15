@@ -25,10 +25,10 @@
 - Use the [WordPress overlay](WORDPRESS.md) for stack-specific rules.
 
 ## 2. Document Map
-- PHP: [AI Coding Standards (PHP)](CODING_STANDARDS_PHP.md)
-- JS/TS: [AI Coding Standards (JS/TS)](CODING_STANDARDS_JS.md)
-- CSS: [AI Coding Standards (CSS)](CODING_STANDARDS_CSS.md)
-- WordPress: [AI Coding Standards (WordPress)](CODING_STANDARDS_WORDPRESS.md)
+- PHP: [AI Coding Standards (PHP)](coding-standards/CODING_STANDARDS_PHP.md)
+- JS/TS: [AI Coding Standards (JS/TS)](coding-standards/CODING_STANDARDS_JS.md)
+- CSS: [AI Coding Standards (CSS)](coding-standards/CODING_STANDARDS_CSS.md)
+- WordPress: [AI Coding Standards (WordPress)](coding-standards/CODING_STANDARDS_WORDPRESS.md)
 
 ## 3. Governance
 - Owners are responsible for approving updates and resolving conflicts.

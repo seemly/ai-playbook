@@ -13,7 +13,7 @@
 
 ### Scope
 - Applies to all PHP in this repository.
-- Supplements [AI Playbook](AI_PLAYBOOK.md) and the [Coding Standards Index](CODING_STANDARDS.md).
+- Supplements [AI Playbook](../AI_PLAYBOOK.md) and the [Coding Standards Index](../CODING_STANDARDS.md).
 
 ## 1. Style and Naming
 - Follow repo-configured PHP coding standards when available.
