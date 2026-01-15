@@ -1,5 +1,24 @@
 # AI-Assisted Development Playbook
 
+## Index
+- [0. Purpose and Scope](#0-purpose-and-scope)
+- [1. Core Principles (Non-Negotiable)](#1-core-principles-non-negotiable)
+- [2. Roles and Responsibility Boundaries](#2-roles-and-responsibility-boundaries)
+- [3. Change Classification and Risk Model](#3-change-classification-and-risk-model)
+- [4. Mandatory Workflow (Order of Execution)](#4-mandatory-workflow-order-of-execution)
+- [5. Test Strategy Decision Framework](#5-test-strategy-decision-framework)
+- [6. Determinism Scaffolding](#6-determinism-scaffolding)
+- [7. AI Usage Rules](#7-ai-usage-rules)
+- [8. Change Execution Rules](#8-change-execution-rules)
+- [9. Review and Verification Gates](#9-review-and-verification-gates)
+- [10. Release and Rollback Discipline](#10-release-and-rollback-discipline)
+- [11. Documentation and Artefacts](#11-documentation-and-artefacts)
+- [12. Learning and Continuous Improvement](#12-learning-and-continuous-improvement)
+- [13. Compliance and Enforcement](#13-compliance-and-enforcement)
+- [14. Relationship to Stack-Specific Playbooks](#14-relationship-to-stack-specific-playbooks)
+- [15. Glossary and Definitions](#15-glossary-and-definitions)
+- [16. Appendix](#16-appendix)
+
 ## 0. Purpose and Scope
 ### Purpose
 - This playbook MUST define the minimum rules for AI-assisted change delivery.
