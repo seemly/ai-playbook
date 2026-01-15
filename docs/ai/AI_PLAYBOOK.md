@@ -598,9 +598,11 @@
 - Determinism controls missing leading to flaky tests.
 
 ### Example compliant vs non-compliant changes
-- Compliant: Change scope matches approved artefacts. Non-compliant: Scope expanded without reclassification.
-- Compliant: Tests added before behaviour change. Non-compliant: Behaviour changed with no safety net.
-- Compliant: Release has rollback plan. Non-compliant: Release proceeds without rollback plan.
-- Compliant: Dependencies approved and recorded. Non-compliant: Dependencies added without approval.
-- Compliant: Contracts updated with impact assessment. Non-compliant: Contracts changed without assessment.
-- Compliant: Verification evidence recorded. Non-compliant: Verification claimed without evidence.
+| Compliant | Non-compliant |
+| --- | --- |
+| Change scope matches approved artefacts. | Scope expanded without reclassification. |
+| Tests added before behaviour change. | Behaviour changed with no safety net. |
+| Release has rollback plan. | Release proceeds without rollback plan. |
+| Dependencies approved and recorded. | Dependencies added without approval. |
+| Contracts updated with impact assessment. | Contracts changed without assessment. |
+| Verification evidence recorded. | Verification claimed without evidence. |
