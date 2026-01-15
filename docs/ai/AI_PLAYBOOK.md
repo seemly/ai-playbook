@@ -3,7 +3,7 @@
 ## 0. Purpose and Scope
 ### Purpose
 1. This playbook MUST define the minimum rules for AI-assisted change delivery.
-2. This playbook MUST protect safety, quality, and accountability across the repo.
+2. This playbook MUST protect safety, quality, and accountability across the repository.
 3. This playbook MUST define minimum artefacts and evidence for review.
 4. This playbook SHOULD enable consistent decision-making and predictable outcomes.
 
@@ -129,7 +129,7 @@
 | --- | --- | --- | --- |
 | Small | Change Brief, Safety Net Plan | Change Brief, Safety Net Plan, Verification Checklist | Change Brief, Safety Net Plan, Verification Checklist, Execution Plan |
 | Medium | Change Brief, Safety Net Plan, Execution Plan | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan |
-| Large | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan, ADR |
+| Large | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan | Change Brief, Safety Net Plan, Execution Plan, Verification Checklist, Release/Rollback Plan, Architecture Decision Record |
 - Artefact definitions and minimum contents MUST follow [Section 11](#11-documentation-and-artefacts).
 
 ### Forbidden change patterns
@@ -145,7 +145,7 @@
 10. Releasing without evidence of required tests or checks.
 
 ### Stop and ask criteria
-1. If change size or risk cannot be agreed, work MUST stop and Section 2 MUST be followed.
+1. If change size or risk cannot be agreed, work MUST stop and [Section 2](#2-roles-and-responsibility-boundaries) MUST be followed.
 2. If any risk dimension is high and artefacts are missing, work MUST stop until artefacts exist.
 3. If a change triggers a forbidden pattern, work MUST stop and a decision MUST be recorded.
 4. If scope expands beyond the current classification, work MUST stop and reclassify.
