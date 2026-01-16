@@ -6,13 +6,13 @@
 - Follow the canonical documents listed below for detailed rules.
 
 ## Source Documents (Authoritative)
-- `docs/ai/AI_PLAYBOOK.md` (baseline workflow + AI rules)
-- `docs/ai/stacks/wordpress/PLAYBOOK.md` (WordPress overlay)
-- `docs/ai/standards/INDEX.md` (language standards index)
-- `docs/ai/standards/php.md` (PHP standards)
-- `docs/ai/standards/js.md` (JS/TS standards)
-- `docs/ai/standards/css.md` (CSS standards)
-- `docs/ai/standards/wordpress.md` (WordPress standards)
+- `PLAYBOOK.md` (baseline workflow + AI rules)
+- `stacks/wordpress/PLAYBOOK.md` (WordPress overlay)
+- `standards/INDEX.md` (language standards index)
+- `standards/php.md` (PHP standards)
+- `standards/js.md` (JS/TS standards)
+- `standards/css.md` (CSS standards)
+- `standards/wordpress.md` (WordPress standards)
 
 ## Cursor/Copilot Rules
 - No `.cursor/rules`, `.cursorrules`, or `.github/copilot-instructions.md` found.

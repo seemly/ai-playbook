@@ -68,15 +68,16 @@ These principles are expanded and enforced in the main playbook.
 
 ```
 .
-├── README.md
-├── docs
-│   └── ai
-│       ├── AI_PLAYBOOK.md
-│       ├── README.md
-│       └── (stack playbooks live here)
+├── PLAN.md
+├── ai
+│   ├── README.md
+│   ├── PLAYBOOK.md
+│   ├── stacks
+│   │   └── (stack playbooks live here)
+│   └── standards
 ├── templates
-│   ├── CHANGE_BRIEF_TEMPLATE.md
-│   └── PULL_REQUEST_TEMPLATE.md
+│   └── git
+│       └── PULL_REQUEST_TEMPLATE.md
 ├── scripts
 │   └── (optional helpers)
 └── .github
@@ -84,7 +85,7 @@ These principles are expanded and enforced in the main playbook.
         └── (optional CI enforcement)
 ```
 
-### `docs/ai/AI_PLAYBOOK.md`
+### `PLAYBOOK.md`
 The **canonical source of truth**.
 
 Defines:
@@ -104,11 +105,9 @@ They describe how the generic rules apply to a specific stack
 
 They must not redefine core principles or workflow.
 
-### `templates/`
+### `templates/git/`
 Reusable templates that make the process concrete:
-- Change briefs
 - Pull request structure
-- Verification and rollback checklists
 
 These are designed to be lightweight and copied into other repos.
 
@@ -179,7 +178,7 @@ Remove or adapt anything that conflicts with your organisation’s policies.
 ## Next Steps
 
 If you are starting fresh:
-1. Read `docs/ai/AI_PLAYBOOK.md` end‑to‑end.
+1. Read `PLAYBOOK.md` end‑to‑end.
 2. Apply the workflow to a small, real change.
 3. Add a first stack‑specific playbook only when needed.
 4. Keep the playbook honest by updating it when it fails you.

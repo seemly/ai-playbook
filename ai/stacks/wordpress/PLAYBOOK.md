@@ -25,7 +25,7 @@
 
 ## 0. Purpose and Scope
 ### Purpose
-- Define WordPress-specific rules that overlay the baseline [AI Playbook](../../AI_PLAYBOOK.md).
+- Define WordPress-specific rules that overlay the baseline [AI Playbook](../../PLAYBOOK.md).
 - Keep guidance thin and focused on WordPress-only requirements.
 
 ### Scope
@@ -34,7 +34,7 @@
 - If this overlay is stricter than the base playbook, follow the stricter rule.
 
 ## 1. How to Use
-- Read [AI Playbook](../../AI_PLAYBOOK.md) first for baseline rules.
+- Read [AI Playbook](../../PLAYBOOK.md) first for baseline rules.
 - Use this overlay for WordPress-specific decisions and workflows.
 - Use the [Coding Standards Index](../../standards/INDEX.md) for language rules.
 - If a rule is missing or unclear, stop and request guidance.
