@@ -2,6 +2,7 @@
 
 ## Index
 - [0. Purpose and Scope](#0-purpose-and-scope)
+- [0.1 Quick Start (Small Changes)](#01-quick-start-small-changes)
 - [1. Core Principles (Non-Negotiable)](#1-core-principles-non-negotiable)
 - [2. Roles and Responsibility Boundaries](#2-roles-and-responsibility-boundaries)
 - [3. Change Classification and Risk Model](#3-change-classification-and-risk-model)
@@ -56,6 +57,16 @@
 - Everyone MUST verify gates using [Section 9](#9-review-and-verification-gates) before release.
 - Everyone SHOULD record required artefacts per [Section 11](#11-documentation-and-artefacts).
 - Re-evaluate [Section 0](#0-purpose-and-scope) when scope changes or new constraints appear.
+
+### 0.1 Quick Start (Small Changes)
+Use this when change size is **Small** and risk is **Low**.
+1. Classify change size and risk per [Section 3](#3-change-classification-and-risk-model).
+2. Create a Change Brief and Safety Net Plan per [Section 11](#11-documentation-and-artefacts).
+3. Confirm boundaries and constraints per [Section 6](#6-determinism-scaffolding).
+4. Implement the change within approved scope per [Section 8](#8-change-execution-rules).
+5. Run the minimum safety net per [Section 5](#5-test-strategy-decision-framework).
+6. Verify gates per [Section 9](#9-review-and-verification-gates).
+7. Record evidence and outcomes per [Section 11](#11-documentation-and-artefacts).
 ## 1. Core Principles (Non-Negotiable)
 ### Principles
 1. Human accountability
@@ -81,7 +92,7 @@
    - Why it exists: Prevents inconsistent application of rules.
 ## 2. Roles and Responsibility Boundaries
 ### Responsibility matrix
-| Area | Human OWNS | AI MAY DO |
+| Area | Human OWNS | AI may do |
 | --- | --- | --- |
 | Goals and acceptance criteria | Define objectives, scope, and success criteria | Summarise requirements and highlight gaps for approval |
 | Risk classification | Classify change size and risk using [Section 3](#3-change-classification-and-risk-model) | Propose classification and cite rationale for review |
@@ -129,6 +140,12 @@
   - Spans multiple domains, interfaces, or shared contracts.
   - High risk of systemic impact or ambiguous behaviour.
   - Reversal is complex or requires multi-step remediation.
+
+### Heuristic thresholds
+- **Small**: 1 component or file group, 1–3 tests, no new dependencies.
+- **Medium**: multiple components or interfaces, 4–10 tests, limited new dependencies.
+- **Large**: cross-domain changes, contract updates, or system-wide impacts.
+- If heuristics conflict with risk dimensions, follow the higher risk classification.
 
 ### Risk dimensions
 - **Blast radius**
@@ -215,6 +232,12 @@
 | High ambiguity or unknown coupling | Characterisation testing | Baseline coverage plus explicit risk notes |
 | High risk change with defined behaviour | True test-driven development | New tests plus coverage of critical paths |
 | Mixed new and legacy behaviour | Combined strategy | Characterisation for existing behaviour, true test-driven development for new behaviour |
+
+### When tests do not exist
+- Capture current behaviour with characterisation tests first.
+- If tests are infeasible, define a manual verification checklist with evidence requirements.
+- Record risk acceptance explicitly in the Change Brief and Verification Checklist.
+- Revisit the test strategy after the first safe change.
 
 ### Definitions
 - **True test-driven development**: Tests MUST be written before implementation and MUST drive design decisions.
@@ -432,6 +455,20 @@
   - Observability data is reviewed after change completion.
   - Observability gaps are recorded for follow-up.
 
+### Evidence examples (minimum acceptable)
+- Automated test output with timestamps and affected test names.
+- Screenshots or recordings for UI/manual checks with stated expectations.
+- Logs or traces showing key state transitions or error paths.
+- Notes that map evidence to acceptance criteria and risk classification.
+
+### Definition of Done (release-ready)
+- Change scope matches approved artefacts and classification.
+- Safety net evidence meets Section 5 requirements.
+- Verification checklist completed with recorded evidence.
+- Rollback plan documented for medium/large changes.
+- Observability signals defined for risk areas.
+- Stakeholders approved release readiness when required.
+
 ### Triggers requiring heightened review
 - High risk classification or large change size.
 - Changes to shared contracts or interfaces.
@@ -455,6 +492,17 @@
 - Rollback MUST include data or state recovery steps where required.
 - Rollback MUST include verification steps after execution.
 - If rollback cannot be executed safely, release MUST stop and escalate.
+
+### Rollback trigger examples
+- Error rates exceed defined thresholds.
+- Critical workflows fail or regress from baseline.
+- Data integrity checks fail or become inconsistent.
+- Security or compliance signals indicate risk.
+
+### Post-release monitoring window
+- Define a minimum observation window for medium and large changes.
+- Record who monitors, which signals matter, and what triggers rollback.
+- Document the monitoring start/end times in release artefacts.
 
 ### Monitoring expectations
 - Monitoring MUST satisfy observability requirements in [Section 9](#9-review-and-verification-gates).
@@ -488,7 +536,7 @@
   - Verification steps and evidence per [Section 9](#9-review-and-verification-gates).
 - **Release and Rollback Plan**
   - Release prerequisites, rollback steps, and monitoring expectations per [Section 10](#10-release-and-rollback-discipline).
-- Pull requests MUST use `templates/PULL_REQUEST_TEMPLATE.md`.
+- Pull requests MUST use `templates/git/PULL_REQUEST_TEMPLATE.md`.
 ## 12. Learning and Continuous Improvement
 ### Post-change review template
 - Summary of change and intended outcomes.
@@ -529,6 +577,11 @@
 - Exceptions MUST include compensating controls and verification steps.
 - Exceptions MUST be approved by accountable owners.
 - If an exception affects release criteria, [Section 10](#10-release-and-rollback-discipline) MUST be followed.
+
+### Exceptions register
+- Record exceptions with owner, scope, duration, and rationale.
+- Link exceptions to affected artefacts and verification evidence.
+- Review active exceptions on a defined cadence.
 
 ### Measuring adherence
 - Adherence metrics MUST track verification completion and artefact coverage.
@@ -601,6 +654,15 @@
 6. Verify gates per [Section 9](#9-review-and-verification-gates).
 7. Prepare release and rollback per [Section 10](#10-release-and-rollback-discipline).
 8. Record outcomes and updates per [Section 12](#12-learning-and-continuous-improvement).
+
+### Ownership and Review Matrix (RACI)
+| Area | Responsible | Accountable | Consulted | Informed |
+| --- | --- | --- | --- | --- |
+| Change Brief | Author | Owner | Reviewers | Stakeholders |
+| Safety Net Plan | Author | Owner | QA/Dev Leads | Stakeholders |
+| Execution Plan | Author | Owner | Reviewers | Stakeholders |
+| Verification Evidence | Tester | Owner | Reviewers | Stakeholders |
+| Release/Rollback Plan | Release Owner | Owner | Ops/SRE | Stakeholders |
 
 ### Example AI prompt wrapper
 - State the goal, non-goals, acceptance criteria, and constraints.
